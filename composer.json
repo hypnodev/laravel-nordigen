@@ -1,0 +1,31 @@
+{
+    "name": "hypnodev/laravel-nordigen",
+    "type": "library",
+    "homepage": "https://github.com/hypnodev/laravel-nordigen",
+    "keywords": ["Laravel", "Nordigen"],
+    "autoload": {
+        "psr-4": {
+            "Hypnodev\\LaravelNordigen\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cristian Cosenza",
+            "email": "me@cristiancosenza.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hypnodev\\LaravelNordigen\\LaravelNordigenServiceProvider"
+            ],
+            "aliases": {
+                "Larapal": "Hypnodev\\LaravelNordigen\\Facades\\LaravelNordigen"
+            }
+        }
+    },
+    "require": {
+        "nordigen/nordigen-php": "^1.1",
+        "illuminate/support": "^9.47"
+    }
+}
